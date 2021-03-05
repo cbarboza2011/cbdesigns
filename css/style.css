@@ -1,0 +1,385 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-row {
+  display: flex;
+	flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+	flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+
+/* GLOBAL */
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Montserrat', serif;
+  color: #ecebed;
+}
+body:before {
+content: "";
+display: block;
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+z-index: -10;
+background: url("../images/purp.jpg") no-repeat center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+.main {
+  height: 100vh;
+  flex-direction: column;
+}
+.photo {
+  background-image: url("../images/purp.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  overflow-y: scroll;
+}
+.section {
+  width: 100%;
+  color: #ecebed;
+  text-shadow: 3px 3px 6px #42404e;
+  padding: 10vh 2vh 2vh;
+  background: rgba(255,255,255,0.3);
+}
+
+h1, h2, h3, .navcontrol {
+  font-family: 'Bebas Neue', cursive;
+}
+
+h1 {
+  font-size: 27vw;
+  text-align: center;
+}
+
+h2 {
+  font-size: 12vw;
+  line-height: 15vw;
+}
+
+h3 {
+  font-size: 10vw;
+  line-height: 6vh;
+  text-align: center;
+}
+#portfolio h3 {
+  margin-top: 5vw;
+}
+h4 {
+  font-size: 6vw;
+  line-height: 8vw;
+  font-weight: bold;
+  margin-bottom: 1vh;
+}
+h1, h2, h3, h4 {
+  letter-spacing: 1.5px;
+}
+p {
+  font-size: 6vw;
+  line-height: 8vw;
+  letter-spacing: .02vw;
+  text-align: center;
+}
+p > a {
+  font-family: 'Bebas Neue';
+  font-size: 7vw;
+  letter-spacing: 2px;
+}
+h2, #about p {
+  text-shadow: 2px 2px 4px #42404e;
+}
+.nav-link, .social a, .email:hover {
+  text-shadow: 1px 1px 2px #676671;
+}
+.grid-box.graphic:hover, .photo-column img:hover, .exit:hover {
+  cursor: pointer;
+}
+
+/* LOGO */
+.logo {
+  padding-right: 2vh;
+}
+.logo img {
+  width: 50vw;
+}
+/* NAVIGATION */
+.nav-container {
+  max-height: 100vh;
+  background: #42404e;
+  border-right: 1px solid #c6c5c9;
+  padding: 1vh;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+}
+.nav-links {
+  flex-direction: column;
+  padding: 2vh 4vh;
+}
+.nav-link {
+  font-size: 2.5vh;
+  letter-spacing: 2px;
+  padding: 0 0 2vh;
+}
+.nav-link:hover {
+  background: #c6c5c9;
+  color: #42404e;
+  text-shadow: 1px 1px 2px #a09fa6;
+}
+.social a:hover {
+  opacity: 0.3;
+}
+.fa {
+  font-size: 3vh;
+  text-align: center;
+  text-decoration: none;
+  background: transparent;
+  color: white;
+  border-radius: 2px;
+}
+.fa:not(:first-child) {
+  padding-left: 5vw;
+}
+.email {
+  font-size: 6vw;
+  padding-top: 4vw;
+  text-align: center;
+}
+.email:hover {
+  color: rgba(236,235,237,0.3);
+  background: inherit;
+}
+.navcontrol {
+  font-family: 'Bebas Neue';
+  letter-spacing: 3px;
+  text-align: left;
+}
+.toggle {
+  display: inline-block;
+  width: 3vh;
+}
+
+/* FRONT PAGE */
+.description {
+  padding-bottom: 10vw;
+  border-bottom: 5px solid #ecebed;
+  margin-bottom: 10vw;
+}
+.task {
+  margin: 1.5vh 0;
+}
+.task p {
+  text-indent: 0;
+}
+.grid {
+  flex-wrap: wrap-reverse;
+  width: 100%;
+  padding: 3vw 0;
+  border-top: 3px solid #ecebed;
+}
+.grid a, .grid-box.graphic {
+  display: block;
+  width: 100%;
+  height: 25vh;
+  margin-bottom: 2%;
+}
+
+.grid-box {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: top;
+  box-shadow: 3px 3px 6px #42404e;
+}
+
+.grid-box-text {
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.5);
+  border-radius: 8px;
+  justify-content: space-around;
+  padding: 3vw;
+}
+
+.grid-box-text:hover {
+  color: #42404e;
+  text-shadow: 2px 2px 2px #27262e;
+  background: rgba(255,255,255,0.3);
+}
+
+
+/* WEBSITE IMAGES */
+#blackjack {
+  background-image: url("../images/websites/blackjack.png");
+}
+
+#chloe {
+  background-image: url("../images/websites/chloe.png");
+}
+
+#bpa {
+  background-image: url("../images/websites/bigpurple.png");
+}
+
+#ams {
+  background-image: url("../images/websites/amesministorage.png");
+}
+
+#hcvr {
+  background-image: url("../images/websites/happycampervacationrentals.png");
+}
+
+#tfc {
+  background-image: url("../images/websites/funkychickencafe.png");
+}
+.grid-box.graphic h3 {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 6vh;
+}
+
+#seo {
+  background-image: url("../images/graphics/SEO.png");
+}
+
+#socialmedia {
+  background-image: url("../images/graphics/socialmedia.png");
+}
+
+#websites {
+  background-image: url("../images/graphics/websites.png");
+}
+
+#gsd {
+  background-image: url("../images/graphics/gsd.png");
+}
+
+#logo {
+  background-image: url("../images/graphics/logo.jpg");
+}
+
+#gps {
+  background-image: url("../images/graphics/gpsad.png");
+}
+
+#crazysister {
+  background-image: url("../images/graphics/crazysister.jpg");
+}
+
+#lovenotes {
+  background-image: url("../images/graphics/lovenotes.jpg");
+}
+
+#ribbon {
+  background-image: url("../images/graphics/ribbon.jpg");
+}
+
+#experience h3 {
+  padding-bottom: 5vh;
+}
+
+.grey {
+  width: 100%;
+  background: rgba(66,64,78,0.5);
+  padding: 5vw;
+  border-radius: 5vw;
+}
+
+.job {
+  margin: 3% 6%;
+  padding: 0 6% 3% ;
+  border-bottom: 1px solid #ecebed;
+}
+.photo-bin {
+	width: 100%;
+	justify-content: space-between;
+}
+
+.photo-column {
+	width: 33%;
+}
+
+.photo-column div {
+  background: white;
+  margin-bottom: 1.5%;
+}
+
+.photo-column img {
+  display: block;
+	width: 100%;
+	opacity: 0.5;
+  border: 0;
+	-webkit-transition: opacity 0.8s;
+	transition: opacity 0.8s;
+	transition-timing-function: ease-in-out;
+}
+
+.photo-column img:hover {
+	opacity: 1;
+}
+
+.big-photo {
+  width: 100%;
+  height: 100vh;
+  background: rgba(1,1,1,0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.enlarged {
+  max-width: 90vw;
+  max-height: 90vh;
+  box-shadow: 6px 6px 10px #131317;
+  margin: auto 0;
+}
+
+.exit {
+  font-size: 20vw;
+  font-weight: bold;
+}
+
+.exit:hover {
+  opacity: .5;
+}
