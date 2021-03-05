@@ -76,9 +76,10 @@ background-size: cover;
 .section {
   width: 100%;
   color: #ecebed;
-  text-shadow: 3px 3px 6px #42404e;
+  text-shadow: 3px 3px 6px #333;
   padding: 10vh 2vh 2vh;
   background: rgba(255,255,255,0.3);
+  min-height: 100vh;
 }
 h1, h2, h3, .navcontrol {
   font-family: 'Bebas Neue', cursive;
@@ -104,6 +105,13 @@ h4 {
   line-height: 8vw;
   font-weight: bold;
   margin-bottom: 1vh;
+  text-align: center;
+  text-transform: uppercase;
+}
+a > h4 {
+  font-size: 4vw;
+  line-height: 6vw;
+  text-align: left;
 }
 h1, h2, h3, h4 {
   letter-spacing: 1.5px;
@@ -119,11 +127,18 @@ p > a {
   font-size: 7vw;
   letter-spacing: 2px;
 }
-.dark-text {
-  color: #42404e;
+.left-align * {
+  text-align: left;
+}
+.left-align p {
+  font-size: 4.5vw;
+  text-decoration: underline;
+}
+.italic {
+  font-style: italic;
 }
 h2, #about p {
-  text-shadow: 2px 2px 4px #42404e;
+  text-shadow: 2px 2px 4px #333;
 }
 .nav-link, .social a, .email:hover {
   text-shadow: 1px 1px 2px #676671;
@@ -134,15 +149,23 @@ h2, #about p {
 
 /* LOGO */
 .logo {
-  padding-right: 2vh;
+  padding-bottom: 2vh;
 }
 .logo img {
+  width: 75%;
+}
+.header {
   width: 100%;
+  align-items: center;
+}
+.header img {
+  height: 10vh;
+  padding-right: 2vh;
 }
 /* NAVIGATION */
 .nav-container {
   max-height: 100vh;
-  background: #42404e;
+  background: #333;
   border-right: 1px solid #c6c5c9;
   padding: 1vh;
   flex-direction: column;
@@ -160,7 +183,7 @@ h2, #about p {
 }
 .nav-link:hover {
   background: #c6c5c9;
-  color: #42404e;
+  color: #333;
   text-shadow: 1px 1px 2px #a09fa6;
 }
 .social a:hover {
@@ -204,6 +227,8 @@ h2, #about p {
 }
 .task {
   margin: 1.5vh 0;
+  display: flex;
+  flex-direction: column;
 }
 .task p {
   text-indent: 0;
@@ -228,7 +253,7 @@ h2, #about p {
   border-radius: 8px;
   background-size: cover;
   background-position: top;
-  box-shadow: 3px 3px 6px #42404e;
+  box-shadow: 3px 3px 6px #333;
 }
 
 .grid-box-text {
@@ -241,7 +266,7 @@ h2, #about p {
 }
 
 .grid-box-text:hover {
-  color: #42404e;
+  color: #333;
   text-shadow: 2px 2px 2px #27262e;
   background: rgba(255,255,255,0.3);
 }
@@ -319,8 +344,8 @@ h2, #about p {
 }
 
 .grey {
+  background: rgba(51,51,51,0.6);
   width: 100%;
-  background: rgba(66,64,78,0.5);
   padding: 5vw;
   border-radius: 5vw;
 }
