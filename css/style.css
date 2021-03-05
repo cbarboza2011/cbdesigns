@@ -80,21 +80,17 @@ background-size: cover;
   padding: 10vh 2vh 2vh;
   background: rgba(255,255,255,0.3);
 }
-
 h1, h2, h3, .navcontrol {
   font-family: 'Bebas Neue', cursive;
 }
-
 h1 {
   font-size: 27vw;
   text-align: center;
 }
-
 h2 {
   font-size: 12vw;
   line-height: 15vw;
 }
-
 h3 {
   font-size: 10vw;
   line-height: 6vh;
@@ -122,6 +118,9 @@ p > a {
   font-family: 'Bebas Neue';
   font-size: 7vw;
   letter-spacing: 2px;
+}
+p.dark-text {
+  color: #42404e;
 }
 h2, #about p {
   text-shadow: 2px 2px 4px #42404e;
