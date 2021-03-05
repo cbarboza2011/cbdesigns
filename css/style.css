@@ -138,7 +138,7 @@ h2, #about p {
   padding-right: 2vh;
 }
 .logo img {
-  width: 50vw;
+  width: 100%;
 }
 /* NAVIGATION */
 .nav-container {
